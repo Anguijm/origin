@@ -16,7 +16,7 @@ Setup:
   5. Approve the consent screen in your browser.
   6. Copy the refresh token printed to your terminal.
 
-Scopes requested: playlist-modify-private, user-read-private.
+Scopes requested: playlist-modify-private, playlist-read-private, user-read-private.
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ import urllib.request
 import webbrowser
 
 REDIRECT_URI = "http://127.0.0.1:8765/callback"
-SCOPES = "playlist-modify-private user-read-private"
+SCOPES = "playlist-modify-private playlist-read-private user-read-private"
 STATE = secrets.token_urlsafe(16)
 
 
