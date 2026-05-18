@@ -25,6 +25,7 @@ import base64
 import csv
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -43,6 +44,48 @@ PLAYLIST_DESC = (
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = REPO_ROOT / "csv" / "rolling-stone-100-punk.csv"
 REPORT_PATH = REPO_ROOT / "outputs" / "report.json"
+
+
+# Manual overrides for cases where Spotify's search returns nothing or the
+# wrong album. Keys are (norm(artist), norm(album)). Value is either a
+# single Spotify album ID or a list of IDs to concatenate in order (used
+# for Minor Threat's "Complete Discography", which Spotify only carries as
+# its component EPs).
+MANUAL_OVERRIDES: dict[tuple[str, str], str | list[str]] = {
+    ("xrayspex", "germfreeadolescents"):           "6O0hDvYYCjEoOzJdXkiaXa",
+    ("theslits", "cut"):                           "6ppPT0aXOtsAlG1QQVB9E0",  # Deluxe Edition
+    ("thecramps", "songsthelordtaughtus"):         "6S9rbimtTmC0v6UBWqSpay",
+    ("operationivy", "energy"):                    "2Rv1kIWFeIYeq8kAtdhY6m",  # listed as self-titled
+    ("publicimageltd", "metalbox"):                "5votrp9PY49suw8xnXqyrm",  # US "Second Edition"
+    ("cockneyrejects", "greatesthitsvol1"):        "78VfmOQmefLVhXmkm44925",
+    ("crass", "thefeedingofthe5000"):              "7BLObcmZzTBqDRaPRpOOWc",  # Crassical Collection
+    ("sickofitall", "bloodsweatandnotears"):       "4toIJJY78eKd9ZLw267mN0",
+    ("newyorkdolls", "newyorkdolls"):              "2xbTV0Awe4Qm5caUVuPbMr",  # 1973 debut
+    ("themisfits", "misfits"):                     "51tAz06EJxwhsk8uNfWxBo",  # Static Age (closest canonical)
+    ("minorthreat", "completediscography"): [
+        "6Sty6rLnMTXFjKxKUZEfmy",  # First Two Seven Inches (1981)
+        "6wPX4FdHqmn0aHZ84WUCW5",  # Out of Step (1984)
+        "5JXGvBK6woRyyxOXro1mW2",  # Salad Days (1985)
+    ],
+}
+
+# Albums confirmed absent from Spotify; treat as intentional skips rather
+# than search failures.
+UNAVAILABLE_ON_SPOTIFY: set[tuple[str, str]] = {
+    ("frightwig", "catfarmfaboo"),
+    ("thefaith", "faithvoidsplit"),
+}
+
+# Matches that look suspicious to the heuristic but are actually correct
+# given Spotify's titling or the user's edition preferences. Suppress the
+# flag for these.
+KNOWN_OK_MATCHES: set[tuple[str, str]] = {
+    ("fugazi", "repeater"),              # CD release is "Repeater + 3 Songs"
+    ("themodernlovers", "themodernlovers"),  # listed as "Jonathan Richman & The Modern Lovers"
+    ("flipper", "genericflipper"),       # full title "Album - Generic Flipper"
+    ("fear", "therecord"),               # only the 2023 remaster exists on Spotify
+    ("idles", "brutalism"),              # Five Years of Brutalism = anniversary, fits deluxe pref
+}
 
 
 def require_env(name: str) -> str:
@@ -162,16 +205,36 @@ def pick_album(candidates: list[dict], target_artist: str, target_album: str) ->
     return pool[0]
 
 
-def search_album(token: str, artist: str, album: str) -> dict | None:
+def get_album(token: str, album_id: str) -> dict:
+    return api("GET", f"/albums/{album_id}", token)
+
+
+def resolve_albums(token: str, artist: str, album: str) -> list[dict] | None:
+    """Resolve a CSV row to one or more Spotify albums, honoring manual
+    overrides for known-bad search results. Returns None for unmatched and
+    a sentinel empty list for albums confirmed unavailable on Spotify."""
+    key = (_norm(artist), _norm(album))
+
+    if key in UNAVAILABLE_ON_SPOTIFY:
+        return []
+
+    if key in MANUAL_OVERRIDES:
+        ids = MANUAL_OVERRIDES[key]
+        if isinstance(ids, str):
+            ids = [ids]
+        return [get_album(token, i) for i in ids]
+
+    # Spotify currently caps /search limit at 10.
     q = f'album:"{album}" artist:"{artist}"'
-    r = api("GET", "/search", token, params={"q": q, "type": "album", "limit": 20})
+    r = api("GET", "/search", token, params={"q": q, "type": "album", "limit": 10})
     pick = pick_album(r.get("albums", {}).get("items", []), artist, album)
     if pick:
-        return pick
+        return [pick]
 
     q2 = f"{album} {artist}"
-    r = api("GET", "/search", token, params={"q": q2, "type": "album", "limit": 30})
-    return pick_album(r.get("albums", {}).get("items", []), artist, album)
+    r = api("GET", "/search", token, params={"q": q2, "type": "album", "limit": 10})
+    pick = pick_album(r.get("albums", {}).get("items", []), artist, album)
+    return [pick] if pick else None
 
 
 def get_album_tracks(token: str, album_id: str) -> list[dict]:
@@ -186,8 +249,10 @@ def get_album_tracks(token: str, album_id: str) -> list[dict]:
         offset += 50
 
 
-def create_playlist(token: str, user_id: str) -> dict:
-    return api("POST", f"/users/{user_id}/playlists", token, body={
+def create_playlist(token: str) -> dict:
+    # /users/{id}/playlists now returns 403 for app-issued tokens;
+    # /me/playlists works with the playlist-modify-private scope.
+    return api("POST", "/me/playlists", token, body={
         "name": PLAYLIST_NAME,
         "public": False,
         "description": PLAYLIST_DESC,
@@ -195,9 +260,39 @@ def create_playlist(token: str, user_id: str) -> dict:
 
 
 def add_tracks(token: str, playlist_id: str, uris: list[str]) -> None:
+    # Spotify's March 2026 migration renamed POST /playlists/{id}/tracks
+    # to POST /playlists/{id}/items for new dev-mode apps. The old path
+    # returns 403 Forbidden. The body shape is unchanged.
     for i in range(0, len(uris), 100):
         batch = uris[i:i + 100]
-        api("POST", f"/playlists/{playlist_id}/tracks", token, body={"uris": batch})
+        api("POST", f"/playlists/{playlist_id}/items", token, body={"uris": batch})
+
+
+_EDITION_KEYWORDS = re.compile(
+    r"\b(remaster(?:ed)?|deluxe|expanded|anniversary|edition|definitive|collector'?s|version|box\s*set|reissue)\b",
+    re.IGNORECASE,
+)
+_PAREN_OR_BRACKET = re.compile(r"\([^)]*\)|\[[^\]]*\]")
+
+
+def _strip_edition(name: str) -> str:
+    cleaned = _PAREN_OR_BRACKET.sub("", name)
+    cleaned = _EDITION_KEYWORDS.sub("", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip(" -;,:")
+
+
+def is_suspicious_match(input_name: str, matched_name: str) -> bool:
+    """True if the chosen album's title diverges from input beyond a simple
+    edition suffix (remaster/deluxe/etc), so a human should eyeball it."""
+    norm_in = _norm(input_name)
+    norm_out = _norm(_strip_edition(matched_name))
+    if not norm_out or norm_in == norm_out:
+        return False
+    if norm_out.startswith(norm_in) and len(norm_out) <= max(len(norm_in) + 3, len(norm_in) * 1.3):
+        return False
+    if norm_in in norm_out and len(norm_out) <= len(norm_in) * 1.3:
+        return False
+    return True
 
 
 def load_rows() -> list[dict]:
@@ -220,43 +315,77 @@ def main() -> None:
 
     matched: list[dict] = []
     unmatched: list[dict] = []
+    duplicates: list[dict] = []
+    flagged: list[dict] = []
+    skipped_unavailable: list[dict] = []
     all_uris: list[str] = []
+    seen_album_ids: set[str] = set()
 
     for i, row in enumerate(rows, 1):
+        key = (_norm(row["artist"]), _norm(row["album"]))
         try:
-            album = search_album(token, row["artist"], row["album"])
+            albums = resolve_albums(token, row["artist"], row["album"])
         except Exception as exc:
-            print(f"  [{i:>3}/{len(rows)}] ERROR searching {row['artist']} - {row['album']}: {exc}",
+            print(f"  [{i:>3}/{len(rows)}] ERROR resolving {row['artist']} - {row['album']}: {exc}",
                   file=sys.stderr)
-            unmatched.append({**row, "reason": f"search_error: {exc}"})
+            unmatched.append({**row, "reason": f"resolve_error: {exc}"})
             continue
 
-        if not album:
+        if albums is None:
             print(f"  [{i:>3}/{len(rows)}] UNMATCHED: {row['artist']} - {row['album']}",
                   file=sys.stderr)
             unmatched.append({**row, "reason": "no_match"})
             continue
 
-        tracks = get_album_tracks(token, album["id"])
-        uris = [t["uri"] for t in tracks if t.get("uri", "").startswith("spotify:track:")]
-        all_uris.extend(uris)
+        if not albums:
+            print(f"  [{i:>3}/{len(rows)}] SKIPPED (not on Spotify): {row['artist']} - {row['album']}",
+                  file=sys.stderr)
+            skipped_unavailable.append({**row, "reason": "unavailable_on_spotify"})
+            continue
 
-        matched.append({
-            "input": row,
-            "spotify_album_name": album["name"],
-            "spotify_album_id": album["id"],
-            "spotify_album_url": album["external_urls"]["spotify"],
-            "release_date": album.get("release_date"),
-            "total_tracks": len(uris),
-        })
-        print(
-            f"  [{i:>3}/{len(rows)}] {row['artist']} - {album['name']} "
-            f"({album.get('release_date', '?')}, {len(uris)} tracks)",
-            file=sys.stderr,
-        )
+        for j, album in enumerate(albums):
+            if album["id"] in seen_album_ids:
+                print(
+                    f"  [{i:>3}/{len(rows)}] DUPLICATE (already added): "
+                    f"{row['artist']} - {album['name']}",
+                    file=sys.stderr,
+                )
+                duplicates.append({
+                    "input": row,
+                    "spotify_album_id": album["id"],
+                    "spotify_album_name": album["name"],
+                })
+                continue
+            seen_album_ids.add(album["id"])
+
+            tracks = get_album_tracks(token, album["id"])
+            uris = [t["uri"] for t in tracks if t.get("uri", "").startswith("spotify:track:")]
+            all_uris.extend(uris)
+
+            suspicious = is_suspicious_match(row["album"], album["name"]) and key not in KNOWN_OK_MATCHES
+            entry = {
+                "input": row,
+                "spotify_album_name": album["name"],
+                "spotify_album_id": album["id"],
+                "spotify_album_url": album["external_urls"]["spotify"],
+                "release_date": album.get("release_date"),
+                "total_tracks": len(uris),
+                "suspicious": suspicious,
+            }
+            matched.append(entry)
+            if suspicious:
+                flagged.append(entry)
+
+            flag = " [FLAGGED]" if suspicious else ""
+            multi = f" (part {j + 1}/{len(albums)})" if len(albums) > 1 else ""
+            print(
+                f"  [{i:>3}/{len(rows)}] {row['artist']} - {album['name']} "
+                f"({album.get('release_date', '?')}, {len(uris)} tracks){multi}{flag}",
+                file=sys.stderr,
+            )
 
     print(f"\nCreating playlist '{PLAYLIST_NAME}' (private)...", file=sys.stderr)
-    pl = create_playlist(token, user_id)
+    pl = create_playlist(token)
     playlist_url = pl["external_urls"]["spotify"]
 
     batches = (len(all_uris) + 99) // 100
@@ -272,18 +401,42 @@ def main() -> None:
         "total_tracks_added": len(all_uris),
         "albums_matched": len(matched),
         "albums_unmatched": len(unmatched),
+        "albums_duplicate": len(duplicates),
+        "albums_skipped_unavailable": len(skipped_unavailable),
+        "albums_flagged": len(flagged),
         "matched_albums": matched,
         "unmatched_albums": unmatched,
+        "duplicate_albums": duplicates,
+        "skipped_unavailable": skipped_unavailable,
+        "flagged_albums": flagged,
     }, indent=2, ensure_ascii=False))
 
     print("\nDone.")
-    print(f"  Playlist URL    : {playlist_url}")
-    print(f"  Tracks added    : {len(all_uris)}")
-    print(f"  Albums matched  : {len(matched)} / {len(rows)}")
-    print(f"  Albums unmatched: {len(unmatched)}")
-    for u in unmatched:
-        print(f"    - {u['artist']} - {u['album']} ({u.get('reason', '')})")
-    print(f"  Full report     : {REPORT_PATH.relative_to(REPO_ROOT)}")
+    print(f"  Playlist URL       : {playlist_url}")
+    print(f"  Tracks added       : {len(all_uris)}")
+    print(f"  Albums matched     : {len(matched)}  (from {len(rows)} CSV rows)")
+    print(f"  Albums unmatched   : {len(unmatched)}")
+    print(f"  Albums duplicate   : {len(duplicates)}  (same album referenced twice in CSV)")
+    print(f"  Albums unavailable : {len(skipped_unavailable)}  (confirmed not on Spotify)")
+    print(f"  Albums flagged     : {len(flagged)}  (title diverges beyond edition suffix)")
+    if unmatched:
+        print("\nUnmatched:")
+        for u in unmatched:
+            print(f"    - {u['artist']} - {u['album']}  [{u.get('reason', '')}]")
+    if skipped_unavailable:
+        print("\nSkipped (not on Spotify):")
+        for u in skipped_unavailable:
+            print(f"    - {u['artist']} - {u['album']}")
+    if flagged:
+        print("\nFlagged for review:")
+        for f_ in flagged:
+            print(f"    - input:   {f_['input']['artist']} - {f_['input']['album']}")
+            print(f"      picked:  {f_['spotify_album_name']}  ({f_['spotify_album_url']})")
+    if duplicates:
+        print("\nDuplicates (CSV row pointed at an album already added):")
+        for d in duplicates:
+            print(f"    - {d['input']['artist']} - {d['input']['album']}  -> already added as {d['spotify_album_name']}")
+    print(f"\nFull report        : {REPORT_PATH.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":

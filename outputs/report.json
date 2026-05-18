@@ -1,0 +1,1433 @@
+{
+  "playlist_name": "Rolling Stone 100 Greatest Punk Albums",
+  "playlist_url": "https://open.spotify.com/playlist/1bNgeB35F86cn3JSpG6Sz0",
+  "playlist_id": "1bNgeB35F86cn3JSpG6Sz0",
+  "user_id": "anguijm",
+  "total_tracks_added": 1828,
+  "albums_matched": 99,
+  "albums_unmatched": 0,
+  "albums_duplicate": 1,
+  "albums_skipped_unavailable": 2,
+  "albums_flagged": 8,
+  "matched_albums": [
+    {
+      "input": {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "album": "Ramones"
+      },
+      "spotify_album_name": "Ramones (40th Anniversary Deluxe Edition; 2016 Remaster)",
+      "spotify_album_id": "5uYDAwW0SZgcfOFkxrST64",
+      "spotify_album_url": "https://open.spotify.com/album/5uYDAwW0SZgcfOFkxrST64",
+      "release_date": "1976-04-23",
+      "total_tracks": 78,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "The Day the World Turned Day-Glo",
+        "artist": "X-Ray Spex",
+        "album": "Germfree Adolescents"
+      },
+      "spotify_album_name": "Germ Free Adolescents",
+      "spotify_album_id": "6O0hDvYYCjEoOzJdXkiaXa",
+      "spotify_album_url": "https://open.spotify.com/album/6O0hDvYYCjEoOzJdXkiaXa",
+      "release_date": "1978-11-10",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "History Lesson Pt. 2",
+        "artist": "Minutemen",
+        "album": "Double Nickels on the Dime"
+      },
+      "spotify_album_name": "Double Nickels on the Dime",
+      "spotify_album_id": "5viZ5HyYtV0wafK7DoXmgF",
+      "spotify_album_url": "https://open.spotify.com/album/5viZ5HyYtV0wafK7DoXmgF",
+      "release_date": "1984-07-24",
+      "total_tracks": 43,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "White Riot",
+        "artist": "The Clash",
+        "album": "The Clash"
+      },
+      "spotify_album_name": "The Clash (Remastered)",
+      "spotify_album_id": "49kzgMsxHU5CTeb2XmFHjo",
+      "spotify_album_url": "https://open.spotify.com/album/49kzgMsxHU5CTeb2XmFHjo",
+      "release_date": "1977",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Dig Me Out",
+        "artist": "Sleater-Kinney",
+        "album": "Dig Me Out"
+      },
+      "spotify_album_name": "Dig Me Out (Remastered)",
+      "spotify_album_id": "3tshnNFNhHrO6NUQ0BHw42",
+      "spotify_album_url": "https://open.spotify.com/album/3tshnNFNhHrO6NUQ0BHw42",
+      "release_date": "1997-04-08",
+      "total_tracks": 13,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "12XU",
+        "artist": "Wire",
+        "album": "Pink Flag"
+      },
+      "spotify_album_name": "Pink Flag (2006 Remastered Version)",
+      "spotify_album_id": "4WXqZZ28geJSPtqLcCF56L",
+      "spotify_album_url": "https://open.spotify.com/album/4WXqZZ28geJSPtqLcCF56L",
+      "release_date": "1977-11-01",
+      "total_tracks": 21,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Anarchy in the U.K.",
+        "artist": "Sex Pistols",
+        "album": "Never Mind the Bollocks Here's the Sex Pistols"
+      },
+      "spotify_album_name": "Never Mind The Bollocks, Here's The Sex Pistols",
+      "spotify_album_id": "5fxYu3rqjCNTSPKN8mtEl2",
+      "spotify_album_url": "https://open.spotify.com/album/5fxYu3rqjCNTSPKN8mtEl2",
+      "release_date": "1977-10-27",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "T.V. Eye",
+        "artist": "The Stooges",
+        "album": "Fun House"
+      },
+      "spotify_album_name": "Fun House (Deluxe Edition)",
+      "spotify_album_id": "3FTcomSFg2zWSqWLRgBYpv",
+      "spotify_album_url": "https://open.spotify.com/album/3FTcomSFg2zWSqWLRgBYpv",
+      "release_date": "1970",
+      "total_tracks": 21,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind"
+      },
+      "spotify_album_name": "Nevermind (Remastered)",
+      "spotify_album_id": "2guirTSEqLizK7j9i1MTTZ",
+      "spotify_album_url": "https://open.spotify.com/album/2guirTSEqLizK7j9i1MTTZ",
+      "release_date": "1991-09-26",
+      "total_tracks": 13,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "London Calling",
+        "artist": "The Clash",
+        "album": "London Calling"
+      },
+      "spotify_album_name": "London Calling (Remastered)",
+      "spotify_album_id": "6FCzvataOZh68j8OKzOt9a",
+      "spotify_album_url": "https://open.spotify.com/album/6FCzvataOZh68j8OKzOt9a",
+      "release_date": "1979",
+      "total_tracks": 19,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Rise Above",
+        "artist": "Black Flag",
+        "album": "Damaged"
+      },
+      "spotify_album_name": "Damaged",
+      "spotify_album_id": "34aFnrFRBlErcbU6moRZR3",
+      "spotify_album_url": "https://open.spotify.com/album/34aFnrFRBlErcbU6moRZR3",
+      "release_date": "1981",
+      "total_tracks": 15,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Gloria",
+        "artist": "Patti Smith",
+        "album": "Horses"
+      },
+      "spotify_album_name": "Horses (50th Anniversary)",
+      "spotify_album_id": "5wfqCy3E6SOkH16Qhv7QRm",
+      "spotify_album_url": "https://open.spotify.com/album/5wfqCy3E6SOkH16Qhv7QRm",
+      "release_date": "2025-10-10",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Something I Learned Today",
+        "artist": "Hüsker Dü",
+        "album": "Zen Arcade"
+      },
+      "spotify_album_name": "Zen Arcade",
+      "spotify_album_id": "0J1DP5GvKrzWumwzlcFhLc",
+      "spotify_album_url": "https://open.spotify.com/album/0J1DP5GvKrzWumwzlcFhLc",
+      "release_date": "1984-07-01",
+      "total_tracks": 23,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Los Angeles",
+        "artist": "X",
+        "album": "Los Angeles"
+      },
+      "spotify_album_name": "Los Angeles (2019 Remaster)",
+      "spotify_album_id": "3OpKtGldm7NzZVVn1LFlYn",
+      "spotify_album_url": "https://open.spotify.com/album/3OpKtGldm7NzZVVn1LFlYn",
+      "release_date": "1980-04-26",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Personality Crisis",
+        "artist": "New York Dolls",
+        "album": "New York Dolls"
+      },
+      "spotify_album_name": "New York Dolls",
+      "spotify_album_id": "2xbTV0Awe4Qm5caUVuPbMr",
+      "spotify_album_url": "https://open.spotify.com/album/2xbTV0Awe4Qm5caUVuPbMr",
+      "release_date": "1973-01-01",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Damaged Goods",
+        "artist": "Gang of Four",
+        "album": "Entertainment!"
+      },
+      "spotify_album_name": "Entertainment! (2021 Remaster)",
+      "spotify_album_id": "0S0dy46whC3AmvS2ssikFG",
+      "spotify_album_url": "https://open.spotify.com/album/0S0dy46whC3AmvS2ssikFG",
+      "release_date": "1979-09-25",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Pay to Cum",
+        "artist": "Bad Brains",
+        "album": "Bad Brains"
+      },
+      "spotify_album_name": "Bad Brains",
+      "spotify_album_id": "4NpepcKo9rQ8nkdCB6iWMP",
+      "spotify_album_url": "https://open.spotify.com/album/4NpepcKo9rQ8nkdCB6iWMP",
+      "release_date": "1982",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Ever Fallen in Love (With Someone You Shouldn't've)",
+        "artist": "Buzzcocks",
+        "album": "Singles Going Steady"
+      },
+      "spotify_album_name": "Singles Going Steady (2019 Remastered Version)",
+      "spotify_album_id": "2ndzjS0sQBYC7slFuZilw7",
+      "spotify_album_url": "https://open.spotify.com/album/2ndzjS0sQBYC7slFuZilw7",
+      "release_date": "1979-09-25",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Statement of Vindication",
+        "artist": "Bikini Kill",
+        "album": "Reject All American"
+      },
+      "spotify_album_name": "Reject All American",
+      "spotify_album_id": "2FQqJCzYzA2Lmtb5XpEMon",
+      "spotify_album_url": "https://open.spotify.com/album/2FQqJCzYzA2Lmtb5XpEMon",
+      "release_date": "1996-04-09",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Longview",
+        "artist": "Green Day",
+        "album": "Dookie"
+      },
+      "spotify_album_name": "Dookie (30th Anniversary Deluxe Edition)",
+      "spotify_album_id": "47l8TkJCLzHaekHImz1e9g",
+      "spotify_album_url": "https://open.spotify.com/album/47l8TkJCLzHaekHImz1e9g",
+      "release_date": "2023-08-17",
+      "total_tracks": 65,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Marquee Moon",
+        "artist": "Television",
+        "album": "Marquee Moon"
+      },
+      "spotify_album_name": "Marquee Moon",
+      "spotify_album_id": "630o1rKTDsLeIPreOY1jqP",
+      "spotify_album_url": "https://open.spotify.com/album/630o1rKTDsLeIPreOY1jqP",
+      "release_date": "1977-02-08",
+      "total_tracks": 8,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "First Two Seven Inches",
+      "spotify_album_id": "6Sty6rLnMTXFjKxKUZEfmy",
+      "spotify_album_url": "https://open.spotify.com/album/6Sty6rLnMTXFjKxKUZEfmy",
+      "release_date": "1981",
+      "total_tracks": 14,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "Out of Step",
+      "spotify_album_id": "6wPX4FdHqmn0aHZ84WUCW5",
+      "spotify_album_url": "https://open.spotify.com/album/6wPX4FdHqmn0aHZ84WUCW5",
+      "release_date": "1984-06-01",
+      "total_tracks": 9,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "Salad Days",
+      "spotify_album_id": "5JXGvBK6woRyyxOXro1mW2",
+      "spotify_album_url": "https://open.spotify.com/album/5JXGvBK6woRyyxOXro1mW2",
+      "release_date": "1985-04-01",
+      "total_tracks": 3,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Suburban Home",
+        "artist": "Descendents",
+        "album": "Milo Goes to College"
+      },
+      "spotify_album_name": "Milo Goes to College",
+      "spotify_album_id": "7ap2sARnQnkhfbUxYIEcu8",
+      "spotify_album_url": "https://open.spotify.com/album/7ap2sARnQnkhfbUxYIEcu8",
+      "release_date": "2022-03-28",
+      "total_tracks": 15,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "That's When I Reach for My Revolver",
+        "artist": "Mission of Burma",
+        "album": "Vs."
+      },
+      "spotify_album_name": "vs.",
+      "spotify_album_id": "7vC6N6yr0lqOiyp7AYX1qH",
+      "spotify_album_url": "https://open.spotify.com/album/7vC6N6yr0lqOiyp7AYX1qH",
+      "release_date": "1982-10-11",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Fairytale in the Supermarket",
+        "artist": "The Raincoats",
+        "album": "The Raincoats"
+      },
+      "spotify_album_name": "The Raincoats",
+      "spotify_album_id": "190Tx9jPHndq0qUlq79BJJ",
+      "spotify_album_url": "https://open.spotify.com/album/190Tx9jPHndq0qUlq79BJJ",
+      "release_date": "1979",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Sheena Is a Punk Rocker",
+        "artist": "Ramones",
+        "album": "Rocket to Russia"
+      },
+      "spotify_album_name": "Rocket to Russia (2017 Remaster)",
+      "spotify_album_id": "39H0vM2hB4QbzPHZON87t5",
+      "spotify_album_url": "https://open.spotify.com/album/39H0vM2hB4QbzPHZON87t5",
+      "release_date": "1977-11-04",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Final Solution",
+        "artist": "Pere Ubu",
+        "album": "Terminal Tower"
+      },
+      "spotify_album_name": "Terminal Tower",
+      "spotify_album_id": "5J3edWNcp9qHyobRrXSrcI",
+      "spotify_album_url": "https://open.spotify.com/album/5J3edWNcp9qHyobRrXSrcI",
+      "release_date": "2018-04-21",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Lexicon Devil",
+        "artist": "The Germs",
+        "album": "(GI)"
+      },
+      "spotify_album_name": "GI",
+      "spotify_album_id": "1dwzhoYlTd5ZgPygszllwo",
+      "spotify_album_url": "https://open.spotify.com/album/1dwzhoYlTd5ZgPygszllwo",
+      "release_date": "1979-10-01",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Johnny's Gonna Die",
+        "artist": "The Replacements",
+        "album": "Sorry Ma Forgot to Take Out the Trash"
+      },
+      "spotify_album_name": "Sorry Ma, Forgot To Take Out The Trash (Deluxe Edition)",
+      "spotify_album_id": "0P6y4oYoVPB5fjZm3buYM8",
+      "spotify_album_url": "https://open.spotify.com/album/0P6y4oYoVPB5fjZm3buYM8",
+      "release_date": "1981",
+      "total_tracks": 100,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Repeater",
+        "artist": "Fugazi",
+        "album": "Repeater"
+      },
+      "spotify_album_name": "Repeater + 3 Songs",
+      "spotify_album_id": "6JbGZGta38AArBgflt024C",
+      "spotify_album_url": "https://open.spotify.com/album/6JbGZGta38AArBgflt024C",
+      "release_date": "1990-03-01",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "She's Lost Control",
+        "artist": "Joy Division",
+        "album": "Unknown Pleasures"
+      },
+      "spotify_album_name": "Unknown Pleasures (Collector's Edition)",
+      "spotify_album_id": "33qkK1brpt6t8unIpeM2Oy",
+      "spotify_album_url": "https://open.spotify.com/album/33qkK1brpt6t8unIpeM2Oy",
+      "release_date": "1979-06-01",
+      "total_tracks": 22,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Kerosene",
+        "artist": "Big Black",
+        "album": "Atomizer"
+      },
+      "spotify_album_name": "Atomizer (Remastered)",
+      "spotify_album_id": "329GMS2ylgBXJUXx26vyae",
+      "spotify_album_url": "https://open.spotify.com/album/329GMS2ylgBXJUXx26vyae",
+      "release_date": "1985-06-01",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "White Light/White Heat",
+        "artist": "The Velvet Underground",
+        "album": "White Light/White Heat"
+      },
+      "spotify_album_name": "White Light / White Heat",
+      "spotify_album_id": "0HHmJpwOXXRJu9HI9iQiEO",
+      "spotify_album_url": "https://open.spotify.com/album/0HHmJpwOXXRJu9HI9iQiEO",
+      "release_date": "1968-01-30",
+      "total_tracks": 6,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Alternative Ulster",
+        "artist": "Stiff Little Fingers",
+        "album": "Inflammable Material"
+      },
+      "spotify_album_name": "Inflammable Material",
+      "spotify_album_id": "2uXYm7SqdQlOgrx2FEWlkD",
+      "spotify_album_url": "https://open.spotify.com/album/2uXYm7SqdQlOgrx2FEWlkD",
+      "release_date": "1979",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Where Eagles Dare",
+        "artist": "The Misfits",
+        "album": "Misfits"
+      },
+      "spotify_album_name": "Static Age",
+      "spotify_album_id": "51tAz06EJxwhsk8uNfWxBo",
+      "spotify_album_url": "https://open.spotify.com/album/51tAz06EJxwhsk8uNfWxBo",
+      "release_date": "1997-01-01",
+      "total_tracks": 17,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Cherry Bomb",
+        "artist": "Bratmobile",
+        "album": "Pottymouth"
+      },
+      "spotify_album_name": "Pottymouth (Remastered)",
+      "spotify_album_id": "0gslg0u8VjLBWPBuInwjsr",
+      "spotify_album_url": "https://open.spotify.com/album/0gslg0u8VjLBWPBuInwjsr",
+      "release_date": "2019-02-15",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Down in the Tube Station at Midnight",
+        "artist": "The Jam",
+        "album": "All Mod Cons"
+      },
+      "spotify_album_name": "All Mod Cons (1997 Remaster)",
+      "spotify_album_id": "1zB3OwsKut94AnGBazJUlZ",
+      "spotify_album_url": "https://open.spotify.com/album/1zB3OwsKut94AnGBazJUlZ",
+      "release_date": "1978-11-03",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Blank Generation",
+        "artist": "Richard Hell and the Voidoids",
+        "album": "Blank Generation"
+      },
+      "spotify_album_name": "Blank Generation (40th Anniversary Deluxe Edition)",
+      "spotify_album_id": "69b7nBXWwREudaeDgIhZXA",
+      "spotify_album_url": "https://open.spotify.com/album/69b7nBXWwREudaeDgIhZXA",
+      "release_date": "2017-11-24",
+      "total_tracks": 22,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Mystery",
+        "artist": "Turnstile",
+        "album": "Glow On"
+      },
+      "spotify_album_name": "GLOW ON",
+      "spotify_album_id": "2NrYPcMmQBlbBxopc2XlzS",
+      "spotify_album_url": "https://open.spotify.com/album/2NrYPcMmQBlbBxopc2XlzS",
+      "release_date": "2021-08-27",
+      "total_tracks": 15,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Return of the Rat",
+        "artist": "The Wipers",
+        "album": "Is This Real?"
+      },
+      "spotify_album_name": "Is This Real?",
+      "spotify_album_id": "531Pc0lZ2aJIHJfyO7q0Ny",
+      "spotify_album_url": "https://open.spotify.com/album/531Pc0lZ2aJIHJfyO7q0Ny",
+      "release_date": "1980-02-15",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "For Want Of",
+        "artist": "Rites of Spring",
+        "album": "Rites of Spring"
+      },
+      "spotify_album_name": "Rites of Spring",
+      "spotify_album_id": "0pU2blS70BzVWyC1tVyaLg",
+      "spotify_album_url": "https://open.spotify.com/album/0pU2blS70BzVWyC1tVyaLg",
+      "release_date": "1985-06-01",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Drunk II",
+        "artist": "Mannequin Pussy",
+        "album": "Patience"
+      },
+      "spotify_album_name": "Patience",
+      "spotify_album_id": "1X0Na8DRV5U6G9grTPDWKF",
+      "spotify_album_url": "https://open.spotify.com/album/1X0Na8DRV5U6G9grTPDWKF",
+      "release_date": "2019-06-21",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Born to Lose",
+        "artist": "Johnny Thunders and the Heartbreakers",
+        "album": "L.A.M.F."
+      },
+      "spotify_album_name": "L.A.M.F: The Definitive Edition - Box Set",
+      "spotify_album_id": "6sv1O38v4YBG8kBI5iRatz",
+      "spotify_album_url": "https://open.spotify.com/album/6sv1O38v4YBG8kBI5iRatz",
+      "release_date": "2012-12-29",
+      "total_tracks": 60,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Typical Girls",
+        "artist": "The Slits",
+        "album": "Cut"
+      },
+      "spotify_album_name": "Cut (Deluxe Edition)",
+      "spotify_album_id": "6ppPT0aXOtsAlG1QQVB9E0",
+      "spotify_album_url": "https://open.spotify.com/album/6ppPT0aXOtsAlG1QQVB9E0",
+      "release_date": "1979-09-07",
+      "total_tracks": 40,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "21st Century (Digital Boy)",
+        "artist": "Bad Religion",
+        "album": "Against the Grain"
+      },
+      "spotify_album_name": "Against The Grain",
+      "spotify_album_id": "5QTyi6ndfGO5vF4DcNgM97",
+      "spotify_album_url": "https://open.spotify.com/album/5QTyi6ndfGO5vF4DcNgM97",
+      "release_date": "1990",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Maps",
+        "artist": "Yeah Yeah Yeahs",
+        "album": "Fever to Tell"
+      },
+      "spotify_album_name": "Fever To Tell (Deluxe Remastered)",
+      "spotify_album_id": "44ePwTuWK88vnalqutqJEG",
+      "spotify_album_url": "https://open.spotify.com/album/44ePwTuWK88vnalqutqJEG",
+      "release_date": "2003-04-29",
+      "total_tracks": 29,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "The Classical",
+        "artist": "The Fall",
+        "album": "Hex Enduction Hour"
+      },
+      "spotify_album_name": "Hex Enduction Hour (Expanded Deluxe Edition)",
+      "spotify_album_id": "3tF3mFPSGK4THpGA8YPKQh",
+      "spotify_album_url": "https://open.spotify.com/album/3tF3mFPSGK4THpGA8YPKQh",
+      "release_date": "1982-03-08",
+      "total_tracks": 20,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Fagetarian and Dyke",
+        "artist": "Team Dresch",
+        "album": "Personal Best"
+      },
+      "spotify_album_name": "Personal Best",
+      "spotify_album_id": "6FkTtMBKTWf4qV5aeL8Sp5",
+      "spotify_album_url": "https://open.spotify.com/album/6FkTtMBKTWf4qV5aeL8Sp5",
+      "release_date": "2019-05-31",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Roadrunner",
+        "artist": "The Modern Lovers",
+        "album": "The Modern Lovers"
+      },
+      "spotify_album_name": "Jonathan Richman & The Modern Lovers (Expanded Version)",
+      "spotify_album_id": "6Ll5mhBDRKoaiqxxXT1QRF",
+      "spotify_album_url": "https://open.spotify.com/album/6Ll5mhBDRKoaiqxxXT1QRF",
+      "release_date": "1976-01-01",
+      "total_tracks": 15,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Live Fast Die Young",
+        "artist": "Circle Jerks",
+        "album": "Group Sex"
+      },
+      "spotify_album_name": "Group Sex (TRUST Edition)",
+      "spotify_album_id": "6jHGm7vTr9CJ2scbUktCYl",
+      "spotify_album_url": "https://open.spotify.com/album/6jHGm7vTr9CJ2scbUktCYl",
+      "release_date": "2020-10-30",
+      "total_tracks": 19,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Ruby Soho",
+        "artist": "Rancid",
+        "album": "...And Out Come the Wolves"
+      },
+      "spotify_album_name": "...And Out Come The Wolves",
+      "spotify_album_id": "5M490pS7xcqY9V3lgKkrRE",
+      "spotify_album_url": "https://open.spotify.com/album/5M490pS7xcqY9V3lgKkrRE",
+      "release_date": "1995-08-15",
+      "total_tracks": 19,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "The Sick Bed of Cuchulain",
+        "artist": "The Pogues",
+        "album": "Rum Sodomy & the Lash"
+      },
+      "spotify_album_name": "Rum Sodomy & The Lash (40th Anniversary Edition)",
+      "spotify_album_id": "7kuescl7zzNfsITGSp4Tts",
+      "spotify_album_url": "https://open.spotify.com/album/7kuescl7zzNfsITGSp4Tts",
+      "release_date": "2025-09-19",
+      "total_tracks": 25,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Mongoloid",
+        "artist": "Devo",
+        "album": "Q: Are We Not Men? A: We Are Devo!"
+      },
+      "spotify_album_name": "Q: Are We Not Men? A: We Are Devo! (2009 Remaster; Deluxe Edition)",
+      "spotify_album_id": "7pYTThpyBynPIpn6LwJpod",
+      "spotify_album_url": "https://open.spotify.com/album/7pYTThpyBynPIpn6LwJpod",
+      "release_date": "1978",
+      "total_tracks": 22,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "TV Set",
+        "artist": "The Cramps",
+        "album": "Songs the Lord Taught Us"
+      },
+      "spotify_album_name": "Songs The Lord Taught Us",
+      "spotify_album_id": "6S9rbimtTmC0v6UBWqSpay",
+      "spotify_album_url": "https://open.spotify.com/album/6S9rbimtTmC0v6UBWqSpay",
+      "release_date": "1980",
+      "total_tracks": 18,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Sound System",
+        "artist": "Operation Ivy",
+        "album": "Energy"
+      },
+      "spotify_album_name": "Operation Ivy (2007 Remaster)",
+      "spotify_album_id": "2Rv1kIWFeIYeq8kAtdhY6m",
+      "spotify_album_url": "https://open.spotify.com/album/2Rv1kIWFeIYeq8kAtdhY6m",
+      "release_date": "1989",
+      "total_tracks": 27,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Poptones",
+        "artist": "Public Image Ltd",
+        "album": "Metal Box"
+      },
+      "spotify_album_name": "Second Edition",
+      "spotify_album_id": "5votrp9PY49suw8xnXqyrm",
+      "spotify_album_url": "https://open.spotify.com/album/5votrp9PY49suw8xnXqyrm",
+      "release_date": "1979",
+      "total_tracks": 12,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Sex Beat",
+        "artist": "Gun Club",
+        "album": "Fire of Love"
+      },
+      "spotify_album_name": "Fire of Love (Remastered 2020)",
+      "spotify_album_id": "14LxwpAPXrY2RrfZoiAIZu",
+      "spotify_album_url": "https://open.spotify.com/album/14LxwpAPXrY2RrfZoiAIZu",
+      "release_date": "1981",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Ain't You",
+        "artist": "Liliput",
+        "album": "Liliput"
+      },
+      "spotify_album_name": "Liliput",
+      "spotify_album_id": "3oR1mh4CLqwl4Pp77aYm9o",
+      "spotify_album_url": "https://open.spotify.com/album/3oR1mh4CLqwl4Pp77aYm9o",
+      "release_date": "2007",
+      "total_tracks": 46,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "You're Blessed",
+        "artist": "Iceage",
+        "album": "New Brigade"
+      },
+      "spotify_album_name": "New Brigade",
+      "spotify_album_id": "4GPOXHLSXJoPxQBULG7GSm",
+      "spotify_album_url": "https://open.spotify.com/album/4GPOXHLSXJoPxQBULG7GSm",
+      "release_date": "2011-01-10",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Sex Bomb",
+        "artist": "Flipper",
+        "album": "Generic Flipper"
+      },
+      "spotify_album_name": "Album - Generic Flipper",
+      "spotify_album_id": "7p8wkhnQPET9CsQRpqrIYP",
+      "spotify_album_url": "https://open.spotify.com/album/7p8wkhnQPET9CsQRpqrIYP",
+      "release_date": "1981-01-01",
+      "total_tracks": 9,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "True Trans Soul Rebel",
+        "artist": "Against Me!",
+        "album": "Transgender Dysphoria Blues"
+      },
+      "spotify_album_name": "Transgender Dysphoria Blues",
+      "spotify_album_id": "3SmYJLsEODt537BS6shP4B",
+      "spotify_album_url": "https://open.spotify.com/album/3SmYJLsEODt537BS6shP4B",
+      "release_date": "2014-01-21",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "I Don't Care About You",
+        "artist": "Fear",
+        "album": "The Record"
+      },
+      "spotify_album_name": "The Record That Took 300 Million and 35 Years To Make (Remaster 2023)",
+      "spotify_album_id": "1iy30ZmInqHF7AFthXN5jv",
+      "spotify_album_url": "https://open.spotify.com/album/1iy30ZmInqHF7AFthXN5jv",
+      "release_date": "2023-05-01",
+      "total_tracks": 13,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Doom 84",
+        "artist": "Screaming Females",
+        "album": "Ugly"
+      },
+      "spotify_album_name": "Ugly",
+      "spotify_album_id": "65cWRtdXotMpZPfGVXbdPT",
+      "spotify_album_url": "https://open.spotify.com/album/65cWRtdXotMpZPfGVXbdPT",
+      "release_date": "2012",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Deceptacon",
+        "artist": "Le Tigre",
+        "album": "Le Tigre"
+      },
+      "spotify_album_name": "Le Tigre",
+      "spotify_album_id": "0ZtHWzOQUPkXzBiS0jVuRa",
+      "spotify_album_url": "https://open.spotify.com/album/0ZtHWzOQUPkXzBiS0jVuRa",
+      "release_date": "1999-10-26",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Ghost Rider",
+        "artist": "Suicide",
+        "album": "Suicide"
+      },
+      "spotify_album_name": "Suicide (2019 - Remaster)",
+      "spotify_album_id": "46kw5FsFdJhNRL8wfHM9Bp",
+      "spotify_album_url": "https://open.spotify.com/album/46kw5FsFdJhNRL8wfHM9Bp",
+      "release_date": "1977-12-28",
+      "total_tracks": 7,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Barroom Hero",
+        "artist": "Dropkick Murphys",
+        "album": "Do or Die"
+      },
+      "spotify_album_name": "Do Or Die",
+      "spotify_album_id": "5EKDBIKZ37Idq0QiXG2qzk",
+      "spotify_album_url": "https://open.spotify.com/album/5EKDBIKZ37Idq0QiXG2qzk",
+      "release_date": "1998",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Holiday in Cambodia",
+        "artist": "Dead Kennedys",
+        "album": "Fresh Fruit for Rotting Vegetables"
+      },
+      "spotify_album_name": "Fresh Fruit for Rotting Vegetables",
+      "spotify_album_id": "2R3cw5WY3lmZVvYHzknmLM",
+      "spotify_album_url": "https://open.spotify.com/album/2R3cw5WY3lmZVvYHzknmLM",
+      "release_date": "1980-09-02",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Boiling Point",
+        "artist": "SS Decontrol",
+        "album": "The Kids Will Have Their Say"
+      },
+      "spotify_album_name": "The Kids Will Have Their Say (TRUST Edition)",
+      "spotify_album_id": "09L13fQs59QPQVKRPvhzSs",
+      "spotify_album_url": "https://open.spotify.com/album/09L13fQs59QPQVKRPvhzSs",
+      "release_date": "2023-11-17",
+      "total_tracks": 18,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Hard to Be Human",
+        "artist": "The Mekons",
+        "album": "Fear and Whiskey"
+      },
+      "spotify_album_name": "Fear and Whiskey",
+      "spotify_album_id": "1zg9WoVOStqPNH0aJdrED7",
+      "spotify_album_url": "https://open.spotify.com/album/1zg9WoVOStqPNH0aJdrED7",
+      "release_date": "1985-01-01",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Gold Chain Punk",
+        "artist": "Soul Glo",
+        "album": "Diaspora Problems"
+      },
+      "spotify_album_name": "Diaspora Problems",
+      "spotify_album_id": "2ZYhM0LXHZ38te98EizcQW",
+      "spotify_album_url": "https://open.spotify.com/album/2ZYhM0LXHZ38te98EizcQW",
+      "release_date": "2022-03-25",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Oi! Oi! Oi!",
+        "artist": "Cockney Rejects",
+        "album": "Greatest Hits Vol. 1"
+      },
+      "spotify_album_name": "Greatest Hits Vol. 1",
+      "spotify_album_id": "78VfmOQmefLVhXmkm44925",
+      "spotify_album_url": "https://open.spotify.com/album/78VfmOQmefLVhXmkm44925",
+      "release_date": "1980-02-08",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Plateau",
+        "artist": "Meat Puppets",
+        "album": "II"
+      },
+      "spotify_album_name": "II",
+      "spotify_album_id": "5JFZRr2UTCkcuT5LSXSbJ9",
+      "spotify_album_url": "https://open.spotify.com/album/5JFZRr2UTCkcuT5LSXSbJ9",
+      "release_date": "1984",
+      "total_tracks": 19,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Release the Bats",
+        "artist": "The Birthday Party",
+        "album": "Junkyard"
+      },
+      "spotify_album_name": "Junkyard",
+      "spotify_album_id": "6oTv6C1t13JKxiNQZVkJwM",
+      "spotify_album_url": "https://open.spotify.com/album/6oTv6C1t13JKxiNQZVkJwM",
+      "release_date": "1982-05-10",
+      "total_tracks": 13,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "X Offender",
+        "artist": "Blondie",
+        "album": "Blondie"
+      },
+      "spotify_album_name": "Blondie (Remastered 2001)",
+      "spotify_album_id": "54V45InMvJ6uVtRtO6h1Co",
+      "spotify_album_url": "https://open.spotify.com/album/54V45InMvJ6uVtRtO6h1Co",
+      "release_date": "1976-12-01",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Sonic Reducer",
+        "artist": "Dead Boys",
+        "album": "Young Loud and Snotty"
+      },
+      "spotify_album_name": "Young, Loud And Snotty",
+      "spotify_album_id": "6SiRxD9eeJELm4TR8C6MDJ",
+      "spotify_album_url": "https://open.spotify.com/album/6SiRxD9eeJELm4TR8C6MDJ",
+      "release_date": "1977",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Do They Owe Us a Living?",
+        "artist": "Crass",
+        "album": "The Feeding of the 5000"
+      },
+      "spotify_album_name": "Feeding Of the Five Thousand (Crassical Collection)",
+      "spotify_album_id": "7BLObcmZzTBqDRaPRpOOWc",
+      "spotify_album_url": "https://open.spotify.com/album/7BLObcmZzTBqDRaPRpOOWc",
+      "release_date": "2020-10-02",
+      "total_tracks": 34,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Dish It Out",
+        "artist": "The Contortions",
+        "album": "Buy"
+      },
+      "spotify_album_name": "Buy",
+      "spotify_album_id": "4J8NzDzTMbHdCxpkvfdtn9",
+      "spotify_album_url": "https://open.spotify.com/album/4J8NzDzTMbHdCxpkvfdtn9",
+      "release_date": "1979-01-01",
+      "total_tracks": 9,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Victim in Pain",
+        "artist": "Agnostic Front",
+        "album": "Victim in Pain"
+      },
+      "spotify_album_name": "Victim In Pain",
+      "spotify_album_id": "6WaOC4Z4cXDDF6SOEJdNK4",
+      "spotify_album_url": "https://open.spotify.com/album/6WaOC4Z4cXDDF6SOEJdNK4",
+      "release_date": "1984-01-01",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Linoleum",
+        "artist": "NOFX",
+        "album": "Punk in Drublic"
+      },
+      "spotify_album_name": "Punk In Drublic",
+      "spotify_album_id": "6Z8BYH27wINoUk4QMUx7gh",
+      "spotify_album_url": "https://open.spotify.com/album/6Z8BYH27wINoUk4QMUx7gh",
+      "release_date": "1994-07-19",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Protest and Survive",
+        "artist": "Discharge",
+        "album": "Hear Nothing See Nothing Say Nothing"
+      },
+      "spotify_album_name": "Hear Nothing See Nothing Say Nothing",
+      "spotify_album_id": "5axD7uNGb9W4OTjI8vqoSJ",
+      "spotify_album_url": "https://open.spotify.com/album/5axD7uNGb9W4OTjI8vqoSJ",
+      "release_date": "1982-05-21",
+      "total_tracks": 23,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Pink White House",
+        "artist": "Priests",
+        "album": "Nothing Feels Natural"
+      },
+      "spotify_album_name": "Nothing Feels Natural",
+      "spotify_album_id": "0JHreJbw5DKq7Nr9aW2KqI",
+      "spotify_album_url": "https://open.spotify.com/album/0JHreJbw5DKq7Nr9aW2KqI",
+      "release_date": "2017-01-27",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Dammit",
+        "artist": "Blink-182",
+        "album": "Dude Ranch"
+      },
+      "spotify_album_name": "Dude Ranch",
+      "spotify_album_id": "0RADUK8yTUBidzBke6Eszq",
+      "spotify_album_url": "https://open.spotify.com/album/0RADUK8yTUBidzBke6Eszq",
+      "release_date": "1997-06-17",
+      "total_tracks": 15,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Kick Out the Jams",
+        "artist": "MC5",
+        "album": "Kick Out the Jams"
+      },
+      "spotify_album_name": "Kick Out The Jams [Live] [Japan Remastered]",
+      "spotify_album_id": "2nnhbHps1fxTXVEy7d3yA6",
+      "spotify_album_url": "https://open.spotify.com/album/2nnhbHps1fxTXVEy7d3yA6",
+      "release_date": "1969",
+      "total_tracks": 8,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Boxcar",
+        "artist": "Jawbreaker",
+        "album": "24 Hour Revenge Therapy"
+      },
+      "spotify_album_name": "24 Hour Revenge Therapy",
+      "spotify_album_id": "3n1jTsW0E5gEsiftAFx3N6",
+      "spotify_album_url": "https://open.spotify.com/album/3n1jTsW0E5gEsiftAFx3N6",
+      "release_date": "1994-01-01",
+      "total_tracks": 17,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Nothing",
+        "artist": "Negative Approach",
+        "album": "Tied Down"
+      },
+      "spotify_album_name": "Tied Down",
+      "spotify_album_id": "5sdycDVzWfRqU7KRURfueQ",
+      "spotify_album_url": "https://open.spotify.com/album/5sdycDVzWfRqU7KRURfueQ",
+      "release_date": "1983-01-01",
+      "total_tracks": 10,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Mommy's Little Monster",
+        "artist": "Social Distortion",
+        "album": "Mommy's Little Monster"
+      },
+      "spotify_album_name": "Mommy's Little Monster",
+      "spotify_album_id": "56w0K0j7JN4Op3WJ7VuOkl",
+      "spotify_album_url": "https://open.spotify.com/album/56w0K0j7JN4Op3WJ7VuOkl",
+      "release_date": "2023-11-10",
+      "total_tracks": 9,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Lights Out",
+        "artist": "Angry Samoans",
+        "album": "Back From Samoa"
+      },
+      "spotify_album_name": "Back from Samoa",
+      "spotify_album_id": "6pOx5blsAONBm6Xvsg8koJ",
+      "spotify_album_url": "https://open.spotify.com/album/6pOx5blsAONBm6Xvsg8koJ",
+      "release_date": "1982",
+      "total_tracks": 14,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Neat Neat Neat",
+        "artist": "The Damned",
+        "album": "Damned Damned Damned"
+      },
+      "spotify_album_name": "Damned Damned Damned (2017 Remaster)",
+      "spotify_album_id": "1himoDWCvVEjBkXg2cuUzt",
+      "spotify_album_url": "https://open.spotify.com/album/1himoDWCvVEjBkXg2cuUzt",
+      "release_date": "2017-02-17",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Shove",
+        "artist": "L7",
+        "album": "Smell the Magic"
+      },
+      "spotify_album_name": "Smell the Magic",
+      "spotify_album_id": "0VgXvWzdF93KHuNdzzSgaB",
+      "spotify_album_url": "https://open.spotify.com/album/0VgXvWzdF93KHuNdzzSgaB",
+      "release_date": "1990",
+      "total_tracks": 9,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Injustice System!",
+        "artist": "Sick of It All",
+        "album": "Blood Sweat and No Tears"
+      },
+      "spotify_album_name": "Blood, Sweat & No Tears",
+      "spotify_album_id": "4toIJJY78eKd9ZLw267mN0",
+      "spotify_album_url": "https://open.spotify.com/album/4toIJJY78eKd9ZLw267mN0",
+      "release_date": "1989",
+      "total_tracks": 19,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Mother",
+        "artist": "IDLES",
+        "album": "Brutalism"
+      },
+      "spotify_album_name": "Five Years of Brutalism",
+      "spotify_album_id": "4qkVmTdLjjLpZAGLHF9SKz",
+      "spotify_album_url": "https://open.spotify.com/album/4qkVmTdLjjLpZAGLHF9SKz",
+      "release_date": "2022-12-09",
+      "total_tracks": 26,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Linda Blair",
+        "artist": "Redd Kross",
+        "album": "Born Innocent"
+      },
+      "spotify_album_name": "Born Innocent",
+      "spotify_album_id": "7fbdvQta1WCGMXPO3QLQoq",
+      "spotify_album_url": "https://open.spotify.com/album/7fbdvQta1WCGMXPO3QLQoq",
+      "release_date": "1982-06-15",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Monstro",
+        "artist": "Downtown Boys",
+        "album": "Full Communism"
+      },
+      "spotify_album_name": "Full Communism",
+      "spotify_album_id": "3xcZH1ySGga0P4CzPPwcBE",
+      "spotify_album_url": "https://open.spotify.com/album/3xcZH1ySGga0P4CzPPwcBE",
+      "release_date": "2015-05-05",
+      "total_tracks": 12,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "New Noise",
+        "artist": "Refused",
+        "album": "The Shape of Punk to Come"
+      },
+      "spotify_album_name": "The Shape Of Punk To Come (Deluxe Edition)",
+      "spotify_album_id": "2Us9qPHLvLoTl6HkYAPcz2",
+      "spotify_album_url": "https://open.spotify.com/album/2Us9qPHLvLoTl6HkYAPcz2",
+      "release_date": "1998",
+      "total_tracks": 24,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Soldier's Requiem",
+        "artist": "Naked Raygun",
+        "album": "Jettison"
+      },
+      "spotify_album_name": "Jettison (Remastered)",
+      "spotify_album_id": "5a4EdB14MeEBMheQfPbU8C",
+      "spotify_album_url": "https://open.spotify.com/album/5a4EdB14MeEBMheQfPbU8C",
+      "release_date": "2025-10-24",
+      "total_tracks": 16,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Ignorance",
+        "artist": "Paramore",
+        "album": "Brand New Eyes"
+      },
+      "spotify_album_name": "Brand New Eyes",
+      "spotify_album_id": "27UqZoE1kV6sIV6uQcI28A",
+      "spotify_album_url": "https://open.spotify.com/album/27UqZoE1kV6sIV6uQcI28A",
+      "release_date": "2009-09-25",
+      "total_tracks": 11,
+      "suspicious": false
+    },
+    {
+      "input": {
+        "title": "Shame",
+        "artist": "D.R.I.",
+        "album": "Dealing With It!"
+      },
+      "spotify_album_name": "Dealing With It! (Millennium Edition)",
+      "spotify_album_id": "6KYKPjFDSvLkx0T4SqslWd",
+      "spotify_album_url": "https://open.spotify.com/album/6KYKPjFDSvLkx0T4SqslWd",
+      "release_date": "1985",
+      "total_tracks": 37,
+      "suspicious": false
+    }
+  ],
+  "unmatched_albums": [],
+  "duplicate_albums": [
+    {
+      "input": {
+        "title": "Suspect Device",
+        "artist": "Stiff Little Fingers",
+        "album": "Inflammable Material"
+      },
+      "spotify_album_id": "2uXYm7SqdQlOgrx2FEWlkD",
+      "spotify_album_name": "Inflammable Material"
+    }
+  ],
+  "skipped_unavailable": [
+    {
+      "title": "My Crotch Does Not Say Go",
+      "artist": "Frightwig",
+      "album": "Cat Farm Faboo",
+      "reason": "unavailable_on_spotify"
+    },
+    {
+      "title": "In the Black",
+      "artist": "The Faith",
+      "album": "Faith/Void Split",
+      "reason": "unavailable_on_spotify"
+    }
+  ],
+  "flagged_albums": [
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "First Two Seven Inches",
+      "spotify_album_id": "6Sty6rLnMTXFjKxKUZEfmy",
+      "spotify_album_url": "https://open.spotify.com/album/6Sty6rLnMTXFjKxKUZEfmy",
+      "release_date": "1981",
+      "total_tracks": 14,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "Out of Step",
+      "spotify_album_id": "6wPX4FdHqmn0aHZ84WUCW5",
+      "spotify_album_url": "https://open.spotify.com/album/6wPX4FdHqmn0aHZ84WUCW5",
+      "release_date": "1984-06-01",
+      "total_tracks": 9,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Straight Edge",
+        "artist": "Minor Threat",
+        "album": "Complete Discography"
+      },
+      "spotify_album_name": "Salad Days",
+      "spotify_album_id": "5JXGvBK6woRyyxOXro1mW2",
+      "spotify_album_url": "https://open.spotify.com/album/5JXGvBK6woRyyxOXro1mW2",
+      "release_date": "1985-04-01",
+      "total_tracks": 3,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Where Eagles Dare",
+        "artist": "The Misfits",
+        "album": "Misfits"
+      },
+      "spotify_album_name": "Static Age",
+      "spotify_album_id": "51tAz06EJxwhsk8uNfWxBo",
+      "spotify_album_url": "https://open.spotify.com/album/51tAz06EJxwhsk8uNfWxBo",
+      "release_date": "1997-01-01",
+      "total_tracks": 17,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Sound System",
+        "artist": "Operation Ivy",
+        "album": "Energy"
+      },
+      "spotify_album_name": "Operation Ivy (2007 Remaster)",
+      "spotify_album_id": "2Rv1kIWFeIYeq8kAtdhY6m",
+      "spotify_album_url": "https://open.spotify.com/album/2Rv1kIWFeIYeq8kAtdhY6m",
+      "release_date": "1989",
+      "total_tracks": 27,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Poptones",
+        "artist": "Public Image Ltd",
+        "album": "Metal Box"
+      },
+      "spotify_album_name": "Second Edition",
+      "spotify_album_id": "5votrp9PY49suw8xnXqyrm",
+      "spotify_album_url": "https://open.spotify.com/album/5votrp9PY49suw8xnXqyrm",
+      "release_date": "1979",
+      "total_tracks": 12,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Do They Owe Us a Living?",
+        "artist": "Crass",
+        "album": "The Feeding of the 5000"
+      },
+      "spotify_album_name": "Feeding Of the Five Thousand (Crassical Collection)",
+      "spotify_album_id": "7BLObcmZzTBqDRaPRpOOWc",
+      "spotify_album_url": "https://open.spotify.com/album/7BLObcmZzTBqDRaPRpOOWc",
+      "release_date": "2020-10-02",
+      "total_tracks": 34,
+      "suspicious": true
+    },
+    {
+      "input": {
+        "title": "Injustice System!",
+        "artist": "Sick of It All",
+        "album": "Blood Sweat and No Tears"
+      },
+      "spotify_album_name": "Blood, Sweat & No Tears",
+      "spotify_album_id": "4toIJJY78eKd9ZLw267mN0",
+      "spotify_album_url": "https://open.spotify.com/album/4toIJJY78eKd9ZLw267mN0",
+      "release_date": "1989",
+      "total_tracks": 19,
+      "suspicious": true
+    }
+  ]
+}
