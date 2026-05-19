@@ -16,8 +16,9 @@ Setup:
   5. Approve the consent screen in your browser.
   6. Copy the refresh token printed to your terminal.
 
-Scopes requested: playlist-modify-private, playlist-read-private,
-user-read-private, user-library-read, user-top-read.
+Requests a comprehensive set of read/modify scopes so the same refresh
+token can cover any future playlist, library, listening-history, or
+playback task without another consent round trip. See SCOPES below.
 """
 
 from __future__ import annotations
@@ -35,7 +36,30 @@ import urllib.request
 import webbrowser
 
 REDIRECT_URI = "http://127.0.0.1:8765/callback"
-SCOPES = "playlist-modify-private playlist-read-private user-read-private user-library-read user-top-read"
+SCOPES = " ".join([
+    # Profile
+    "user-read-private",
+    # Playlists
+    "playlist-read-private",
+    "playlist-read-collaborative",
+    "playlist-modify-private",
+    "playlist-modify-public",
+    # Library
+    "user-library-read",
+    "user-library-modify",
+    # Listening signals
+    "user-top-read",
+    "user-read-recently-played",
+    # Follows
+    "user-follow-read",
+    "user-follow-modify",
+    # Playback (read + control)
+    "user-read-playback-state",
+    "user-modify-playback-state",
+    "user-read-currently-playing",
+    # Custom playlist cover images
+    "ugc-image-upload",
+])
 STATE = secrets.token_urlsafe(16)
 
 
